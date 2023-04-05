@@ -1,0 +1,13 @@
+server:
+    port: 8008
+
+spring:
+    application:
+        name: hub-api-node-1
+
+couchbase:
+    connection-string: couchbase://192.168.0.64
+    username: admin
+    password: eogksalsrnr
+    bucket-name: hub
+

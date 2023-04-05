@@ -1,0 +1,123 @@
+[versions]
+kotlin = "1.8.10"
+spring-boot = "3.0.5"
+spring-boot-restdocs-webtestclient = "3.0.0"
+spring-boot-ascii-doctor = "3.0.0"
+spring-boot-dependency-management = "1.1.0"
+com-epages-restdocs-api-spec = "0.17.1"
+ascii-doctor-jvm-convert = "3.3.2"
+
+data-stax-driver-mapper-processor = "4.15.0"
+
+slf4j = "2.0.6"
+logback = "1.2.11"
+map-struct = "1.5.3.Final"
+jjwt = "0.11.5"
+jackson = "2.14.2"
+password4j = "1.7.0"
+libphonenumber = "8.13.7"
+uuid-creator = "5.2.0"
+
+kotest = "5.5.5"
+kotest-extensions-spring = "1.1.2"
+test-project-reactor = "3.5.3"
+test-containers = "1.17.6"
+fixture-monkey = "0.4.12"
+cucumber = "7.11.2"
+mockk = "1.13.4"
+ninja-mockk = "4.0.2"
+test-embedded-cassandra = "4.3.1.0"
+
+[libraries]
+# kotlin
+kotlin = { module = "org.jetbrains.kotlin:kotlin-stdlib" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
+
+slf4j = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+
+# SpringBoot
+spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter", version.ref = "spring-boot" }
+spring-boot-devtools = { module = "org.springframework.boot:spring-boot-devtools", version.ref = "spring-boot" }
+spring-boot-bom = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot" }
+spring-boot-autoconfigure = { module = "org.springframework.boot:spring-boot-autoconfigure", version.ref = "spring-boot" }
+spring-boot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor", version.ref = "spring-boot" }
+spring-boot-starter-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux", version.ref = "spring-boot" }
+spring-boot-starter-r2dbc = { module = "org.springframework.boot:spring-boot-starter-data-r2dbc", version.ref = "spring-boot" }
+spring-boot-starter-reactive-redis = { module = "org.springframework.boot:spring-boot-starter-data-redis-reactive", version.ref = "spring-boot" }
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "spring-boot" }
+spring-boot-starter-validation = { module = "org.springframework.boot:spring-boot-starter-validation", version.ref = "spring-boot" }
+spring-boot-starter-reactive-security = { module = "org.springframework.boot:spring-boot-starter-security", version.ref = "spring-boot" }
+spring-boot-restdocs-asciidoctor = { module = "org.springframework.restdocs:spring-restdocs-asciidoctor", version.ref = "spring-boot-ascii-doctor" }
+spring-boot-restdocs-webtestclient = { module = "org.springframework.restdocs:spring-restdocs-webtestclient", version.ref = "spring-boot-restdocs-webtestclient" }
+spring-boot-data-commons = { module = "org.springframework.data:spring-data-commons", version.ref = "spring-boot-restdocs-webtestclient" }
+spring-boot-starter-reactive-cassandra = { module = "org.springframework.boot:spring-boot-starter-data-cassandra-reactive", version.ref = "spring-boot" }
+spring-boot-starter-reactive-couchbase = { module = "org.springframework.boot:spring-boot-starter-data-couchbase-reactive", version.ref = "spring-boot" }
+
+# driver
+io-r2dbc-pool = { module = "io.r2dbc:r2dbc-pool", version = "1.0.0.RELEASE" }
+io-r2dbc-spi = { module = "io.r2dbc:r2dbc-spi", version = "1.0.0.RELEASE" }
+org-postgresql = { module = "org.postgresql:postgresql", version = "42.5.4" }
+org-postgresql-r2dbc = { module = "org.postgresql:r2dbc-postgresql", version = "1.0.1.RELEASE" }
+com-datastax-driver-mapper-processor = { module = "com.datastax.oss:java-driver-mapper-processor", version.ref = "data-stax-driver-mapper-processor" }
+
+# map-struct
+mapstruct = { module = "org.mapstruct:mapstruct", version.ref = "map-struct" }
+kapt-mapstruct = { module = "org.mapstruct:mapstruct-processor", version.ref = "map-struct" }
+kapt-test-mapstruct = { module = "org.mapstruct:mapstruct-processor", version.ref = "map-struct" }
+
+# password4j
+password4j = { module = "com.password4j:password4j", version.ref = "password4j" }
+
+# google phone number
+com-google-libphonenumber = { module = "com.googlecode.libphonenumber:libphonenumber", version.ref = "libphonenumber" }
+
+# UUID
+com-github-uuid-creator = { module = "com.github.f4b6a3:uuid-creator", version.ref = "uuid-creator" }
+
+# jackson
+com-fasterxml-jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jackson" }
+com-fasterxml-jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
+com-fasterxml-jackson-annotations = { module = "com.fasterxml.jackson.core:jackson-annotations", version.ref = "jackson" }
+com-fasterxml-jackson-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310", version.ref = "jackson" }
+com-fasterxml-jackson-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jackson" }
+
+# JWT
+io-jsonwebtoken-api = { module = "io.jsonwebtoken:jjwt-api", version.ref = "jjwt" }
+io-jsonwebtoken-impl = { module = "io.jsonwebtoken:jjwt-impl", version.ref = "jjwt" }
+io-jsonwebtoken-jackson = { module = "io.jsonwebtoken:jjwt-jackson", version.ref = "jjwt" }
+
+# Test
+kotest-runner-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
+kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
+kotest-extension-spring = { module = "io.kotest.extensions:kotest-extensions-spring", version.ref = "kotest-extensions-spring" }
+kotest-extension-testcontainers = { module = "io.kotest.extensions:kotest-extensions-testcontainers", version.ref = "kotest" }
+fixture-monkey-starter = { module = "com.navercorp.fixturemonkey:fixture-monkey-starter", version.ref = "fixture-monkey" }
+fixture-monkey-kotlin = { module = "com.navercorp.fixturemonkey:fixture-monkey-kotlin", version.ref = "fixture-monkey" }
+fixture-monkey-jackson = { module = "com.navercorp.fixturemonkey:fixture-monkey-jackson", version.ref = "fixture-monkey" }
+fixture-monkey-validation = { module = "com.navercorp.fixturemonkey:fixture-monkey-jakarta-validation", version.ref = "fixture-monkey" }
+test-containers = { module = "org.testcontainers:testcontainers", version.ref = "test-containers" }
+test-containers-postgresql = { module = "org.testcontainers:postgresql", version.ref = "test-containers" }
+test-containers-cassandra = { module = "org.testcontainers:cassandra", version.ref = "test-containers" }
+test-containers-couchbase = { module = "org.testcontainers:couchbase", version.ref = "test-containers" }
+test-containers-junit-jupiter = { module = "org.testcontainers:junit-jupiter", version.ref = "test-containers" }
+test-project-reactor = { module = "io.projectreactor:reactor-test", version.ref = "test-project-reactor" }
+test-rest-docs-api-spec = { module = "com.epages:restdocs-api-spec", version.ref = "com-epages-restdocs-api-spec" }
+test-rest-docs-api-spec-webtestclient = { module = "com.epages:restdocs-api-spec-webtestclient", version.ref = "com-epages-restdocs-api-spec" }
+cucumber-junit = { module = "io.cucumber:cucumber-junit", version.ref = "cucumber" }
+cucumber-java = { module = "io.cucumber:cucumber-java", version.ref = "cucumber" }
+cucumber-java8 = { module = "io.cucumber:cucumber-java8", version.ref = "cucumber" }
+cucumber-engine = { module = "io.cucumber:cucumber-junit-platform-engine", version.ref = "cucumber" }
+cucumber-spring = { module = "io.cucumber:cucumber-spring", version.ref = "cucumber" }
+mock-kotlin = { module = "io.mockk:mockk", version.ref = "mockk" }
+ninja-squad-springmockk = { module = "com.ninja-squad:springmockk", version.ref = "ninja-mockk" }
+test-embedded-cassandra = { module = "org.cassandraunit:cassandra-unit-spring", version.ref = "test-embedded-cassandra" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-boot-dependency-management" }
+kotlin-allopen = { id = "org.jetbrains.kotlin.plugin.allopen", version.ref = "kotlin" }
+kotlin-noarg = { id = "org.jetbrains.kotlin.plugin.noarg", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+rest-docs-api-spec = { id = "com.epages.restdocs-api-spec", version.ref = "com-epages-restdocs-api-spec" }
+ascii-doctor-jvm-convert = { id = "org.asciidoctor.jvm.convert", version.ref = "ascii-doctor-jvm-convert" }
